@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: front-app
+server:
+  port: 8081
+
+remote:
+  service:
+    url: http://localhost:8080

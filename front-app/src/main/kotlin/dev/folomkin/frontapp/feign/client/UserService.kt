@@ -1,4 +1,4 @@
-package dev.folomkin.frontapp.client
+package dev.folomkin.frontapp.feign.client
 
 import org.springframework.stereotype.Service
 

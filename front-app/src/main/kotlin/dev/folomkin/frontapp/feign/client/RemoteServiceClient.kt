@@ -1,4 +1,4 @@
-package dev.folomkin.frontapp.client
+package dev.folomkin.frontapp.feign.client
 
 import org.springframework.cloud.openfeign.FeignClient
 import org.springframework.web.bind.annotation.GetMapping
@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.RequestBody
 
 
 @FeignClient(name = "remote-service", url = "\${remote.service.url}")
-
 interface RemoteServiceClient {
 
     @GetMapping("/api/users/{id}")

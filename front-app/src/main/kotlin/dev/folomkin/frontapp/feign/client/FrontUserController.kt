@@ -1,4 +1,4 @@
-package dev.folomkin.frontapp.client
+package dev.folomkin.frontapp.feign.client
 
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.GetMapping
@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.RestController
 class UserController(
     val userService: UserService
 ) {
-
 
     @GetMapping("/{id}")
     fun getUser(@PathVariable id: Long): ResponseEntity<UserDto> {
